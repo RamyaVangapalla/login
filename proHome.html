@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+      
+    }
+    h2{
+        color: white;
+        position: relative;
+        left:27%;
+        top:18%;
+        font-size:50px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        letter-spacing:2px;
+    }
+    .Home{
+      background-color: black;
+      position: absolute;
+      width: 100%;
+      height:100%;
+      overflow: hidden;
+    }
+    .home_login{
+     color:black;
+     height:36px;
+     width:170px;
+     background-color:white ;
+    border-radius:17.5px;
+    border: none;
+    position:relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    left:35%;
+    top:25%;
+    font-weight:bold;
+    font-size: 15px;
+    }
+    .home_register{
+        color:white;
+        height: 37px;
+        width: 170px;
+        background-color: transparent;
+        border-radius: 17.5px;
+        border:1.5px solid white;
+        left:40%;
+        top:25%;
+        position: relative;
+        font-weight: bold;
+    }
+    .home_hello{
+        color:white;
+        font-size:20px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+         'Helvetica Neue', sans-serif;
+        position: relative;
+        left:45%;
+        top:18%;
+        font-weight: bold;
+    }
+    .Box div{
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        border:4px solid white;
+        color:white;
+    }
+    .Box div:nth-child(1){
+        top:12%;
+        left:39%;
+        animation:animate 10s linear infinite;
+        border-color: teal;
+    }
+    .Box div:nth-child(2){
+        top:70%;
+        left:50%;
+        animation: animate 7s linear infinite;
+        border-color: violet;
+    }
+    .Box div:nth-child(3){
+    top:17%;
+    left:6%;
+    animation: animate 9s linear infinite;
+    border-color: yellow;
+    }
+    .Box div:nth-child(4){
+    top:20%;
+    left:60%;
+    animation: animate 10s linear infinite;
+    border-color: salmon;
+    }
+    .Box div:nth-child(5){
+       top:67%;
+       left:10%;
+       animation: animate 6s linear infinite;
+       border-color: steelblue;
+    }
+    .Box div:nth-child(6){
+        top:80%;
+         left:70%;
+        animation: animate 12s linear infinite;
+        border-color: tomato;
+     }
+     .Box div:nth-child(7){
+         top:60%;
+         left:80%;
+         animation: animate 12s linear infinite;
+         border-color: yellowgreen;
+      }
+      .Box div:nth-child(8){
+         top:48%;
+         left:25%;
+         animation: animate 16s linear infinite;
+         border-color:slategray;
+      }
+      .Box div:nth-child(9){
+         top:88%;
+         left:25%;
+         animation: animate 9s linear infinite;
+         border-color:rgb(60, 54, 92) ;
+      }
+      .Box div:nth-child(10){
+         top:20%;
+         left:80%;
+         animation: animate 5s linear infinite;
+         border-color: rgb(30, 45, 56);
+     }
+     .Box div:nth-child(11){
+         top:37%;
+         left:90%;
+         animation: animate 6s linear infinite;
+         border-color: rgb(6, 173, 123);
+     }
+     .Box div:nth-child(12)
+     {
+         top:90%;
+         left:87%;
+         animation: animate 10s linear infinite;
+         border-color: rgb(73, 44, 44);
+     }
+     .Box div:nth-child(13){
+         top:85%;
+         left:1%;
+         animation: animate 5s linear infinite;
+         border-color: rgb(85, 37, 85);
+     }
+     .Box div:nth-child(14){
+         top:90%;
+         left: 50%;
+         animation: animate 5s linear infinite ;
+         border-color: midnightblue;
+     }
+     @keyframes animate {
+         0%{
+              transform: scale(0) translateY(0) rotate(0);
+              opacity: 1;
+         }
+         100%{
+             transform: scale(1.3) translateY(-100px) rotate(360deg);
+             opacity: 0;
+         }
+     }
+     .description{
+         color:rgb(173, 165, 165);
+         font-family: Arial, Helvetica, sans-serif;
+         font-weight:400;
+         position: relative;
+         left:2%;
+     }
+     .description_text1{
+         position: relative;
+         left:23%;
+         top:100px;
+     }
+     .description_text2{
+        position: relative;
+        left:30%;
+        top:110px;
+     }
+     .description_text3{
+         position: relative;
+         left:38%;
+         top:120px;
+     }
+     @media screen and (max-width:600px) {
+        .home_hello{
+        font-size:12px;
+          position: relative;
+          left:40%;
+          top:18%;
+        }
+        h2{
+        color: white;
+        position: relative;
+        left:11%;
+         top:18%;
+        font-size:22px;
+        letter-spacing:1px;
+        }
+        .description{
+           color:rgb(173, 165, 165);
+           font-family: Arial, Helvetica, sans-serif;
+           font-weight:400;
+           font-size:10px;
+           position: relative;
+           left:-10%;
+          }
+          .description_text1{
+             position: relative;
+             left:14%;
+             top:100px;
+          }
+         .description_text2{
+            position: relative;
+            left:15%;
+            top:110px;
+         }
+        .description_text3{
+           position: relative;
+           left:28%;
+          top:120px;
+        }
+        .home_login{
+           color:black;
+           height: 26px;
+           width:150px;
+           background-color:white ;
+           border-radius:17.5px;
+           border: none;
+           position:relative;
+           font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+           left:27%;
+           top:30%;
+           font-weight:bold;
+           font-size: 15px;
+        }
+           .home_register{
+               color:white;
+               height: 27px;
+               width: 150px;
+                background-color: transparent;
+               border-radius: 17.5px;
+               border:1.5px solid white;
+               left:27%;
+               top:70%;
+                position:absolute;
+               font-weight: normal;
+        }
+     }    
+</style>
+<body>
+    <div class="Home">
+        <p class="home_hello">HEY THERE..!!</p>
+        <h2>Welcome To "Dear Diary"</h2>
+        
+            <p class="description">
+                <span class="description_text1">Writing a diary is a great way to process your thoughts and 
+                feelings.No matter how old you are,</span><br><span class="description_text2">what stage of life you're or what future
+                plans are,a diary can help you </span><br><span class="description_text3"> keep track of your goals and your daily life.</span> 
+            </p>
+        
+       <button class="home_login">LOGIN</button>
+        <button class="home_register">REGISTER NOW</button>
+        <div class="Box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+</body>
+</html>
